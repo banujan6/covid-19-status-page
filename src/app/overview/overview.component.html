@@ -1,0 +1,92 @@
+<div class="m-4">
+
+    <div class="row mb-3">
+      <div class="col-12">
+        <h5>Local</h5>
+        <div class="text-muted">Corona Cases in Sri Lanka</div>
+      </div>
+    </div>
+  
+    <div class="row mb-2">
+      <div class="col-9">
+        New Cases
+      </div>
+      <div class="col-3 text-right">
+        {{ data.local_new_cases | number }}
+      </div>
+    </div>
+    
+    <div class="row mb-2">
+      <div class="col-9">
+        Total Cases
+      </div>
+      <div class="col-3 text-right">
+        {{ data.local_total_cases | number }}
+      </div>
+    </div>
+  
+    <div class="row mb-2">
+      <div class="col-9">
+        Total Deaths
+      </div>
+      <div class="col-3 text-right">
+        {{ data.local_deaths | number }}
+      </div>
+    </div>
+  
+    <div class="row mb-2">
+      <div class="col-9">
+        Local Recovered
+      </div>
+      <div class="col-3 text-right">
+        {{ data.local_recovered | number }}
+      </div>
+    </div>
+  
+    <hr/>
+  
+    <div class="row mt-4 mb-3">
+      <div class="col-12">
+        <h5>Global</h5>
+        <div class="text-muted">Corona Cases World Wide</div>
+      </div>
+    </div>
+  
+    <div class="row mb-2">
+      <div class="col-9">
+        New Cases
+      </div>
+      <div class="col-3 text-right">
+        {{ data.global_new_cases | number }}
+      </div>
+    </div>
+    
+    <div class="row mb-2">
+      <div class="col-9">
+        Total Cases
+      </div>
+      <div class="col-3 text-right">
+        {{ data.global_total_cases | number }}
+      </div>
+    </div>
+  
+    <div class="row mb-2">
+      <div class="col-9">
+        Total Deaths
+      </div>
+      <div class="col-3 text-right">
+        {{ data.global_deaths | number }}
+      </div>
+    </div>
+  
+    <div class="row mb-2">
+      <div class="col-9">
+        Local Recovered
+      </div>
+      <div class="col-3 text-right">
+        {{ data.global_recovered | number }}
+      </div>
+    </div>
+  
+  </div>
+  

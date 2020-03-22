@@ -1,0 +1,72 @@
+<div class="m-4">
+
+    <div *ngIf="data.length == 0" class="alert alert-info">
+        No Data Found / Fetching Data...
+    </div>
+
+    <div *ngFor="let hospital of data">
+        <div class="row mb-2">
+            <div class="col-12">
+                <h5>{{ hospital.hospital.name }}</h5>
+            </div>
+        </div>
+    
+        <div class="row mb-2">
+            <div class="col-9">
+                Cumulative Local
+            </div>
+            <div class="col-3 text-right">
+                {{ hospital.cumulative_local | number }}
+            </div>
+        </div>
+        
+        <div class="row mb-2">
+            <div class="col-9">
+                Cumulative Foreign
+            </div>
+            <div class="col-3 text-right">
+                {{ hospital.cumulative_foreign | number }}
+            </div>
+        </div>
+    
+        <div class="row mb-2">
+            <div class="col-9">
+                Treatment Local
+            </div>
+            <div class="col-3 text-right">
+                {{ hospital.treatment_local | number }}
+            </div>
+        </div>
+    
+        <div class="row mb-2">
+            <div class="col-9">
+                Treatment Foreign
+            </div>
+            <div class="col-3 text-right">
+                {{ hospital.treatment_foreign | number }}
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-9">
+                Cumulative Total
+            </div>
+            <div class="col-3 text-right">
+                {{ hospital.cumulative_total | number }}
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-9">
+                Treatment Total
+            </div>
+            <div class="col-3 text-right">
+                {{ hospital.treatment_total | number }}
+            </div>
+        </div>
+    
+        <hr/>
+    </div>
+  
+  </div>
+  

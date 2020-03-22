@@ -1,0 +1,25 @@
+<div class="container-fluid heading">
+
+  <h3>COVID - 19</h3>
+  <h6>Status Page - Sri Lanka & World Wide</h6>
+  <div class="xstxt">( Updates every 1 minute )</div>
+</div>
+
+<div>
+
+  <ul class="nav justify-content-center nav-tabs mt-4">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Overview</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="hospitals" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Hospitals</a>
+    </li>
+  </ul>
+
+  <router-outlet></router-outlet>
+
+  <div class="text-center text-muted my-4">
+      Made with ❤️ <br> <a href='https://hpb.health.gov.lk/api/get-current-statistical'>hpb.health.gov.lk</a> and <a href=''>Github</a>.
+  </div>
+
+</div>
